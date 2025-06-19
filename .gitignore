@@ -1,0 +1,3 @@
+/backend/agent/app/disk/
+.env
+.DS_Store

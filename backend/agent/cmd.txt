@@ -1,0 +1,15 @@
+# Run this command to setup the python env
+conda create --name gh-bot python=3.10.18 
+conda activate gh-bot
+python --version
+
+# install required packages
+pip install -r requirements.txt
+
+# Run
+python github_helper_ai.py 
+
+# test the service
+    curl -X POST http://127.0.0.1:8080/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "List top python projects", "k": 3}'
