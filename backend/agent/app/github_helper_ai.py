@@ -1,6 +1,7 @@
 import faiss
 import numpy as np
 import google.generativeai as genai
+#from google import genai
 import os
 import json
 import logging
@@ -316,4 +317,4 @@ with app.app_context():
 if __name__ == '__main__':
     # Use 0.0.0.0 to make it accessible from other machines on the network
     # In production, use a WSGI server like Gunicorn
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=1717)

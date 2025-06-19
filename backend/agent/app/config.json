@@ -5,13 +5,13 @@
       "gemini_llm_model": "gemini-2.0-flash"  
     },
     "document_loading": {
-      "documents_folder": "disk/github_chunks",
+      "documents_folder": "/disk/github_chunks",
       "allowed_file_extensions": [".txt", ".md"]
     },
     "faiss_index_settings": {
       "faiss_index_type": "IndexFlatL2",
-      "index_file_name": "disk/indexes/index.faiss",
-      "mapping_file_name": "disk/indexes/faiss_id_to_doc_id_map.json"
+      "index_file_name": "/disk/indexes/index.faiss",
+      "mapping_file_name": "/disk/indexes/faiss_id_to_doc_id_map.json"
     },
     "search_settings": {
       "default_k_neighbors": 5,

@@ -1,3 +1,4 @@
-/backend/agent/app/disk/
+/backend/agent/disk/
+/backend/agent/disk/*
 .env
 .DS_Store
