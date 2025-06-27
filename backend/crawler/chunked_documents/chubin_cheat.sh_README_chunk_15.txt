@@ -1,0 +1,8 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+* [cheat-sh.el](https://github.com/davep/cheat-sh.el) — Emacs support (available also at cheat.sh/:emacs)
+* cheat.sh/:emacs-ivy — Emacs support for ivy users  
+[![asciicast](https://asciinema.org/a/3xvqwrsu9g4taj5w526sb2t35.png)](https://asciinema.org/a/3xvqwrsu9g4taj5w526sb2t35)

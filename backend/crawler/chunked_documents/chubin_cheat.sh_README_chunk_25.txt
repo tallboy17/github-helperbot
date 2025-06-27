@@ -1,0 +1,15 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+If you want to add a cheat sheet, you have one of the following
+ways:  
+* Add it to one of the external cheat sheets repositories; you should decide on your own what is the best repository for your cheat sheet;
+* Add it to the local cheat.sh repository ([cheat.sheets](https://github.com/chubin/cheat.sheets)) on github (fork, commit, pull request);
+* Post it on cheat.sh using curl or a web browser ([cheat.sh/:post](http://cheat.sh/:post)).  
+If you want to change an existing cheat sheet,
+you have to find the original repository (when you open a cheat sheet in a browser,
+you see the repository's github button in the bottom of the cheat sheet),
+the cheat sheet is coming from, and change it there.
+After some time the changes will be synchronized on cheat.sh.

@@ -1,0 +1,16 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+You can access cheat.sh from Windows command line too.  
+Use cheat.sh command line client for that: [`cht.exe`](https://github.com/tpanj/cht.exe).
+It supports:  
+* output colorization;
+* command line options;
+* its own configuration file.  
+You can also use [`scoop`](https://github.com/lukesampson/scoop) command-line installer for Windows to get it:
+```batch
+scoop install cht
+```  
+----

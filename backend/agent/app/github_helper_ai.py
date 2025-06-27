@@ -5,6 +5,8 @@ import google.generativeai as genai
 import os
 import json
 import logging
+import uuid
+from datetime import datetime, timezone
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS # For handling Cross-Origin Resource Sharing
@@ -216,47 +218,99 @@ def query_llm_with_rag(user_query, context):
 
 # --- API Endpoints ---
 
-@app.route('/health', methods=['GET'])
+@app.route('/api/health', methods=['GET'])
 def health_check():
-    """Simple health check endpoint."""
-    return jsonify({"status": "ok", "message": "API is running"}), 200
-
-@app.route('/search', methods=['POST'])
-def search_api():
     """
-    RESTful API endpoint for RAG-powered search.
-    Expects a JSON payload with 'query' (string) and optional 'k' (integer).
+    Performs a health check on the service, verifying all components are initialized.
+    Returns the health status, model name, and timestamp.
+    """
+    # Service checkpoints
+    is_healthy = all([
+        app_config is not None,
+        faiss_index is not None,
+        faiss_id_to_doc_id_map,  # Check if list is populated
+        prompt_template is not None,
+        llm_model is not None
+    ])
+
+    status = "healthy" if is_healthy else "unhealthy"
+    status_code = 200 if is_healthy else 503
+
+    model_name = "unknown"
+    if app_config and 'api_settings' in app_config and 'gemini_llm_model' in app_config['api_settings']:
+        model_name = app_config['api_settings']['gemini_llm_model']
+
+    timestamp = datetime.now(timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')
+
+    response = {
+        "status": status,
+        "model": model_name,
+        "timestamp": timestamp
+    }
+
+    return jsonify(response), status_code
+
+@app.route('/api/chat', methods=['POST'])
+def chat_api():
+    """
+    RESTful API endpoint for RAG-powered chat.
+    Expects a JSON payload with 'current_message' (object with role and content) 
+    and optional 'chat_history' (array of message objects).
     """
     data = request.get_json()
-    if not data or 'query' not in data:
-        return jsonify({"error": "Missing 'query' in request body."}), 400
+    if not data or 'current_message' not in data:
+        return jsonify({"error": "Missing 'current_message' in request body."}), 400
 
-    user_query = data['query']
+    current_message = data['current_message']
+    chat_history = data.get('chat_history', [])
     k = data.get('k', app_config['search_settings']['default_k_neighbors'])
 
+    # Validate current_message structure
+    if not isinstance(current_message, dict) or 'role' not in current_message or 'content' not in current_message:
+        return jsonify({"error": "current_message must be an object with 'role' and 'content' fields."}), 400
+    
+    if current_message['role'] != 'user':
+        return jsonify({"error": "current_message role must be 'user'."}), 400
+    
+    user_query = current_message['content']
     if not isinstance(user_query, str) or not user_query.strip():
-        return jsonify({"error": "Query must be a non-empty string."}), 400
+        return jsonify({"error": "User message content must be a non-empty string."}), 400
+
+    # Validate chat_history structure
+    if not isinstance(chat_history, list):
+        return jsonify({"error": "chat_history must be an array."}), 400
+    
+    for msg in chat_history:
+        if not isinstance(msg, dict) or 'role' not in msg or 'content' not in msg:
+            return jsonify({"error": "Each message in chat_history must have 'role' and 'content' fields."}), 400
+        if msg['role'] not in ['user', 'assistant']:
+            return jsonify({"error": "Message roles must be either 'user' or 'assistant'."}), 400
+
     if not isinstance(k, int) or k <= 0:
         return jsonify({"error": "k must be a positive integer."}), 400
 
     try:
-        logger.info(f"API Request: Query='{user_query}', k={k}")
+        logger.info(f"API Request: Query='{user_query}', k={k}, Chat history length={len(chat_history)}")
         
         retrieved_results = search_text(user_query, k)
-        
-        # Prepare document IDs for response, without sending full content back
-        retrieved_doc_ids = [res['document_id'] for res in retrieved_results]
-
         context = generate_llm_context(retrieved_results)
-        
         llm_response = query_llm_with_rag(user_query, context)
 
-        return jsonify({
-            "query": user_query,
-            "k_retrieved": len(retrieved_results),
-            "retrieved_document_ids": retrieved_doc_ids,
-            "llm_response": llm_response
-        }), 200
+        # Create updated chat history with the current user message
+        updated_chat_history = chat_history + [current_message]
+        
+        # Create current message with assistant response
+        current_message = {
+            "role": "assistant",
+            "content": llm_response
+        }
+
+        response = {
+            "current_message": current_message,
+            "chat_history": updated_chat_history
+        }
+
+        return jsonify(response), 200
 
     except FileNotFoundError as e:
         logger.exception("File not found error during API processing:")

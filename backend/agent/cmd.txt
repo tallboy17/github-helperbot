@@ -10,6 +10,55 @@ pip install -r requirements.txt
 python github_helper_ai.py 
 
 # test the service
-    curl -X POST http://127.0.0.1:8080/search \
-  -H "Content-Type: application/json" \
-  -d '{"query": "List top python projects", "k": 3}'
+  
+
+
+#docker 
+docker build -t gh-bot .
+docker run --rm -it \
+    --env-file .env \
+    -p 1717:1717 \
+    -v $(pwd)/disk:/disk \
+    gh-bot
+
+docker run --rm -it \
+    --env-file .env \
+    -p 1717:1717 \
+    -v $(pwd)/disk:/disk \
+    gh-bot /bin/bash
+
+
+curl -X POST -H "Content-Type: application/json"   -d '{
+    "current_message": {
+      "role": "user",
+      "content": "List two python projects?"
+    },
+    "chat_history": [
+      
+    ]
+  }'   http://127.0.0.1:3000/api/chat/message 
+
+
+curl -X POST -H "Content-Type: application/json"   -d '{
+  "current_message": {
+    "role": "user",
+    "content": "List two python projects?"
+  },
+  "chat_history": []
+}'   http://127.0.0.1:3000/api/chat/message 
+
+curl -X POST -H "Content-Type: application/json"   -d '{
+  "current_message": {
+    "role": "user",
+    "content": "kl"
+  },
+  "chat_history": []
+}'   http://127.0.0.1:3000/api/chat/message 
+
+curl -X POST -H "Content-Type: application/json"   -d '{
+  "current_message": {
+    "role": "user",
+    "content": "List two python projects?"
+  },
+  "chat_history": []
+}'   http://127.0.0.1:1717/api/chat 

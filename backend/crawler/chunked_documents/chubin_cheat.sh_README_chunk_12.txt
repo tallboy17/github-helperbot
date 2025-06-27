@@ -1,0 +1,13 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+Currently, the easiest way to get a self-hosted instance running is by using
+the `docker-compose.yml` file.  
+docker-compose up  
+This builds and runs the image with baked in cheatsheets and starts the app
+and a Redis instance to back it, making the service available at
+http://localhost:8002 This is currently an early implementation and should
+probably not be used for anything outside of internal/dev/personal use right
+now.

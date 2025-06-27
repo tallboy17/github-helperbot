@@ -1,0 +1,55 @@
+Repository: comfyanonymous/ComfyUI
+Language: Python
+Stars: 80094
+Forks: 8865
+-----
+- Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
+- Image Models
+- SD1.x, SD2.x,
+- [SDXL](https://comfyanonymous.github.io/ComfyUI_examples/sdxl/), [SDXL Turbo](https://comfyanonymous.github.io/ComfyUI_examples/sdturbo/)
+- [Stable Cascade](https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/)
+- [SD3 and SD3.5](https://comfyanonymous.github.io/ComfyUI_examples/sd3/)
+- Pixart Alpha and Sigma
+- [AuraFlow](https://comfyanonymous.github.io/ComfyUI_examples/aura_flow/)
+- [HunyuanDiT](https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_dit/)
+- [Flux](https://comfyanonymous.github.io/ComfyUI_examples/flux/)
+- [Lumina Image 2.0](https://comfyanonymous.github.io/ComfyUI_examples/lumina2/)
+- [HiDream](https://comfyanonymous.github.io/ComfyUI_examples/hidream/)
+- [Cosmos Predict2](https://comfyanonymous.github.io/ComfyUI_examples/cosmos_predict2/)
+- Video Models
+- [Stable Video Diffusion](https://comfyanonymous.github.io/ComfyUI_examples/video/)
+- [Mochi](https://comfyanonymous.github.io/ComfyUI_examples/mochi/)
+- [LTX-Video](https://comfyanonymous.github.io/ComfyUI_examples/ltxv/)
+- [Hunyuan Video](https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_video/)
+- [Nvidia Cosmos](https://comfyanonymous.github.io/ComfyUI_examples/cosmos/) and [Cosmos Predict2](https://comfyanonymous.github.io/ComfyUI_examples/cosmos_predict2/)
+- [Wan 2.1](https://comfyanonymous.github.io/ComfyUI_examples/wan/)
+- Audio Models
+- [Stable Audio](https://comfyanonymous.github.io/ComfyUI_examples/audio/)
+- [ACE Step](https://comfyanonymous.github.io/ComfyUI_examples/audio/)
+- 3D Models
+- [Hunyuan3D 2.0](https://docs.comfy.org/tutorials/3d/hunyuan3D-2)
+- Asynchronous Queue system
+- Many optimizations: Only re-executes the parts of the workflow that changes between executions.
+- Smart memory management: can automatically run models on GPUs with as low as 1GB vram.
+- Works even if you don't have a GPU with: ```--cpu``` (slow)
+- Can load ckpt, safetensors and diffusers models/checkpoints. Standalone VAEs and CLIP models.
+- Embeddings/Textual inversion
+- [Loras (regular, locon and loha)](https://comfyanonymous.github.io/ComfyUI_examples/lora/)
+- [Hypernetworks](https://comfyanonymous.github.io/ComfyUI_examples/hypernetworks/)
+- Loading full workflows (with seeds) from generated PNG, WebP and FLAC files.
+- Saving/Loading workflows as Json files.
+- Nodes interface can be used to create complex workflows like one for [Hires fix](https://comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/) or much more advanced ones.
+- [Area Composition](https://comfyanonymous.github.io/ComfyUI_examples/area_composition/)
+- [Inpainting](https://comfyanonymous.github.io/ComfyUI_examples/inpaint/) with both regular and inpainting models.
+- [ControlNet and T2I-Adapter](https://comfyanonymous.github.io/ComfyUI_examples/controlnet/)
+- [Upscale Models (ESRGAN, ESRGAN variants, SwinIR, Swin2SR, etc...)](https://comfyanonymous.github.io/ComfyUI_examples/upscale_models/)
+- [unCLIP Models](https://comfyanonymous.github.io/ComfyUI_examples/unclip/)
+- [GLIGEN](https://comfyanonymous.github.io/ComfyUI_examples/gligen/)
+- [Model Merging](https://comfyanonymous.github.io/ComfyUI_examples/model_merging/)
+- [LCM models and Loras](https://comfyanonymous.github.io/ComfyUI_examples/lcm/)
+- Latent previews with [TAESD](#how-to-show-high-quality-previews)
+- Starts up very fast.
+- Works fully offline: core will never download anything unless you want to.
+- Optional API nodes to use paid models from external providers through the online [Comfy API](https://docs.comfy.org/tutorials/api-nodes/overview).
+- [Config file](extra_model_paths.yaml.example) to set the search paths for models.  
+Workflow examples can be found on the [Examples page](https://comfyanonymous.github.io/ComfyUI_examples/)

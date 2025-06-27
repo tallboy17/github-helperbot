@@ -22,7 +22,7 @@ RUN pip install google-generativeai
 # Copy the rest of the application code into the container at /app
 COPY app/ /app/
 
-# Expose port 5000 (where the Flask app will run)
+# Expose port 1717 (where the Flask app will run)
 EXPOSE 1717
 
 # Set default command to run the Flask app

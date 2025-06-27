@@ -1,0 +1,69 @@
+Repository: charlax/professional-programming
+Language: Python
+Stars: 47703
+Forks: 3794
+-----
+- [The Conjoined Triangles of Senior-Level Development](http://frontside.io/blog/2016/07/07/the-conjoined-triangles-of-senior-level-development.html) looks into how to define a senior engineer.
+- [Ten Principles for Growth as an Engineer](https://medium.com/@daniel.heller/ten-principles-for-growth-69015e08c35b), Dan Heller.
+- [Don't Call Yourself a Programmer](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/), Patrick McKenzie.
+- [On being an Engineering Manager](https://nickmchardy.com/2019/02/on-being-an-engineering-manager.html)
+- [The career advice I wish I had at 25](https://www.linkedin.com/pulse/career-advice-i-wish-had-25-shane-rodgers/?trk=hp-feed-article-title-like)
+- A career is a marathon, not a sprint
+- Most success comes from repetition, not new things
+- If work was really so great all the rich people would have the jobs
+- Management is about people, not things
+- Genuinely listen to others
+- Recognise that staff are people with finite emotional capacity
+- Don’t just network with people your own age
+- Never sacrifice personal ethics for a work reason
+- Recognise that failure is learning
+- [Career advice I wish I’d been given when I was young](https://80000hours.org/2019/04/career-advice-i-wish-id-been-given-when-i-was-young/)
+- Don’t focus too much on long-term plans.
+- Find good thinkers and cold-call the ones you most admire.
+- Assign a high value to productivity over your whole lifespan.
+- Don’t over-optimise things that aren’t your top priority.
+- Read a lot, and read things that people around you aren’t reading.
+- Reflect seriously on what problem to prioritise solving.
+- Read more history.
+- [Why Good Developers are Promoted into Unhappiness](https://robwalling.com/2007/06/27/why-good-developers-are-promoted-into-unhappiness/), Rob Walling. Or why management might not be for you.
+- [A guide to using your career to help solve the world’s most pressing problems](https://80000hours.org/key-ideas/)
+- [What's a senior engineer's job?](https://jvns.ca/blog/senior-engineer/) You need to be more than just an individual contributor.
+- [From Coding Bootcamp Graduate to Building Distributed Databases](https://medium.com/swlh/from-coding-bootcamp-graduate-to-building-distributed-databases-29acbb723d8)
+- Read Books (and papers), not Blog Posts
+- Take responsibility for your career trajectory
+- 🏙 [The Well Rounded Engineer](https://speakerdeck.com/swanandp/the-well-rounded-engineer) includes lots of great book recommendations.
+- Paradigm polyglot (learn different languages & paradigms)
+- Database polyglot
+- Protocol polyglot (preferably TCP/IP and HTTP)
+- Proficiency with build tooling, packaging and distribution
+- Debugging, observability
+- Deployment, infra and devops
+- Software architecture and scaling
+- Ability to write toy compilers, interpreters and parsers
+- Ability to write toy games
+- Ability to understand algorithmic analysis
+- [Some career advice](https://lethain.com/career-advice/), Will Larson.
+- Advice you get is someone’s attempt to synthesize their experiences, not an accurate statement about how the world works.
+- Build a reservoir of prestige.
+- Some folks are so good at something that they end up being irreplaceable in their current role, which causes them to get stuck in their role even if they’re a good candidate for more interesting ones.
+- Great relationships will follow you everywhere you go. Bad ones too.
+- Early in your career, try to work at as many different kinds of companies and in different product vertical as you can.
+- [Evil tip: avoid "easy" things](http://yosefk.com/blog/evil-tip-avoid-easy-things.html)
+- [The Ultimate Code Kata](https://blog.codinghorror.com/the-ultimate-code-kata/)
+- [Traits of a senior software engineer](https://sergiomartins8.hashnode.dev/why-is-a-senior-engineer-senior): impact, perception, visibility, influence, mentoring
+- [Software Engineering - The Soft Parts](https://addyosmani.com/blog/software-engineering-soft-parts/)
+- Think critically and formulate well-reasoned arguments
+- Master the fundamentals
+- Focus on the user and all else will follow
+- Learn how to learn
+- [How To Own Your Growth As A Software Engineer](https://jes.al/2022/07/how-to-own-your-growth-as-a-software-engineer/)
+- [The Forty-Year Programmer](https://codefol.io/posts/the-forty-year-programmer/)
+- The Better You Get, the Less You Look Like Everybody Else
+- You Learn Deep Principles by Doing the Basics
+- Look to Other Fields, Learn From Other Fields
+- Be Careful About Productivity Tips
+- [Senior Engineers are Living in the Future](https://www.zerobanana.com/essays/living-in-the-future/)
+- [What would a map of your career look like?](https://tomcritchlow.com/2023/04/26/career-maps/)
+- [How to be successful at Amazon (or any other large company for that matter)](https://www.reddit.com/r/cscareerquestions/comments/4x0ugj/how_to_be_successful_at_amazon_or_any_other_large/)  
+About senior engineers:  
+- [Falsehoods Junior Developers believe about becoming Senior](https://vadimkravcenko.com/shorts/falsehoods-junior-developers-believe-about-becoming-senior/)

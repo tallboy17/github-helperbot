@@ -1,0 +1,8 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+If you want to add a cheat sheet repository to cheat.sh, please open an issue:  
+* [Add a new repository](https://github.com/chubin/cheat.sh/issues/new)  
+Please specify the name of the repository, and give its short description.

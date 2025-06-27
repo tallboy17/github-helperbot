@@ -1,0 +1,83 @@
+Repository: charlax/professional-programming
+Language: Python
+Stars: 47703
+Forks: 3794
+-----
+- [Practical Advice for New Software Engineers](http://product.hubspot.com/blog/practical-advice-for-new-software-engineers)
+- [On Being A Senior Engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)
+- [Lessons Learned in Software Development](http://henrikwarne.com/2015/04/16/lessons-learned-in-software-development/): one of those articles that give you years of hard-earned lessons, all in one short article. Must read.
+- [Things I Learnt The Hard Way](https://blog.juliobiason.me/thoughts/things-i-learnt-the-hard-way/)
+- Spec first, then code
+- Tests make better APIs
+- Future thinking is future trashing
+- Documentation is a love letter to your future self
+- Sometimes, it's better to let the application crash than do nothing
+- Understand and stay away of cargo cult
+- "Right tool for the job" is just to push an agenda
+- Learn the basics functional programming
+- ALWAYS use timezones with your dates
+- ALWAYS use UTF-8
+- Create libraries
+- Learn to monitor
+- Explicit is better than implicit
+- Companies look for specialists but keep generalists longer
+- The best secure way to deal with user data is not to capture it
+- When it's time to stop, it's time to stop
+- You're responsible for the use of your code
+- Don't tell "It's done" when it's not
+- Pay attention on how people react to you
+- Beware of micro-aggressions
+- Keep a list of "Things I Don't Know"
+- [Signs that you're a good programmer](https://skatgame.net/mburo//courses/350/signs-that-you-re-a-good-programmer.html) (not everything in here is great - some of the points are counterproductive)
+- The instinct to experiment first
+- Emotional detachment from code and design
+- Eager to fix what isn't broken
+- Fascinated by the incomprehensible
+- Compelled to teach
+- Incorruptible patience
+- A destructive pursuit of perfection
+- Encyclopedic grasp of the platform
+- Thinks In Code
+- When In Rome, Does As Romans Do
+- Creates their own tools
+- Indifferent to Hierarchy
+- Excited by failure
+- Indifferent to circumstances
+- Substitutes impulse for commitment
+- Driven by experiences
+- [7 absolute truths I unlearned as junior developer](https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-developer/)
+- Early in your career, you can learn 10x more in a supportive team in 1 year, than coding on your own
+- Every company has problems, every company has technical debt.
+- Being overly opinionated on topics you lack real-world experience with is pretty arrogant.
+- Many conference talks cover proof of concepts rather than real-world scenarios.
+- Dealing with legacy is completely normal.
+- Architecture is more important than nitpicking.
+- Focus on automation over documentation where appropriate.
+- Having some technical debt is healthy.
+- Senior engineers must develop many skills besides programming.
+- We’re all still junior in some areas.
+- [How to Build Good Software](https://knowledge.csc.gov.sg/ethos-issue-21/how-to-build-good-software/)
+- A good high-level summary of fundamental engineering practices.
+- The root cause of bad software has less to do with specific engineering choices, and more to do with how development projects are managed.
+- There is no such thing as platonically good engineering: it depends on your needs and the practical problems you encounter.
+- Software should be treated not as a static product, but as a living manifestation of the development team’s collective understanding.
+- Software projects rarely fail because they are too small; they fail because they get too big.
+- Beware of bureaucratic goals masquerading as problem statements. If our end goal is to make citizens’ lives better, we need to explicitly acknowledge the things that are making their lives worse.
+- Building software is not about avoiding failure; it is about strategically failing as fast as possible to get the information you need to build something good.
+- [How to be a -10x Engineer](https://taylor.town/-10x)
+- Nullify the output of 10 engineers.
+- Hold 10 engineers hostage in a technical discussion.
+- Waste 10 weeks of wages on cloud costs.
+- Waste 400 hours of engineering on bad architecture.
+- Incur 400 hours of bug triage.
+- [A Bunch of Programming Advice I'd Give To Myself 15 Years Ago](https://mbuffett.com/posts/programming-advice-younger-self/)
+- If you (or your team) are shooting yourselves in the foot constantly, fix the gun
+- Assess the trade-off you’re making between quality and pace, make sure it’s appropriate for your context
+- Spending time sharpening the axe is almost always worth it
+- If you can’t easily explain why something is difficult, then it’s incidental complexity, which is probably worth addressing
+- Try to solve bugs one layer deeper
+- Don’t underestimate the value of digging into history to investigate some bugs
+- Bad code gives you feedback, perfect code doesn’t. Err on the side of writing bad code
+- Make debugging easier
+- When working on a team, you should usually ask the question
+- Shipping cadence matters a lot. Think hard about what will get you shipping quickly and often

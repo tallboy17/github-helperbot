@@ -1,0 +1,18 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+![cheat.sh logo](http://cheat.sh/files/big-logo-v2-fixed.png)  
+Unified access to the best community driven cheat sheets repositories of the world.  
+Let's imagine for a moment that there is such a thing as an ideal cheat sheet.
+What should it look like?
+What features should it have?  
+* **Concise** — It should only contain the things you need, and nothing else.
+* **Fast** — It should be possible to use it instantly.
+* **Comprehensive** — It should contain answers for every possible question.
+* **Universal** — It should be available everywhere, anytime, without any preparations.
+* **Unobtrusive** — It should not distract you from your main task.
+* **Tutoring** — It should help you to learn the subject.
+* **Inconspicuous** — It should be possible to use it completely unnoticed.  
+Such a thing exists! It's easy to [install](#installation) and there's even [auto-complete](#tab-completion).

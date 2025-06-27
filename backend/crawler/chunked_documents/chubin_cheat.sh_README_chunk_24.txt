@@ -1,0 +1,14 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+If you want to edit a cheat.sh cheat sheet, you should edit it in the upstream repository.
+You will find the name of the source repository in a browser when you open a cheat sheet.
+There are two github buttons at the bottom of the page: the second one is the button
+of the repository, which belongs the current cheat sheet.  
+You can edit the cheat sheet directly in your browser (you need a github account for it).
+There is an edit button in the top right corner. If you click on it, an editor will be open.
+There you will change the cheat sheet (under the hood: the upstream repository is forked, your changes are
+committed in the forked repository, a pull request to the upstream repository owner is sent).  
+![cheat.sh cheat sheets repositories](http://cheat.sh/files/edit-cheat-sheet.png)

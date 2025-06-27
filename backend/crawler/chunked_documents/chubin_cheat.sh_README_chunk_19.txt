@@ -1,0 +1,17 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+* [cheatsh-qtcreator](https://github.com/pozemka/cheatsh-qtcreator)  
+Current features:  
+*    search word under cursor
+*    search selected
+*    query search
+*    disable comments
+*    paste answer (?TQ version)
+*    custom server URL
+*    custom search context (default is cpp)
+*    hotkeys and menu  
+[![cheatsh-qtcreator](https://user-images.githubusercontent.com/1259724/73876361-ecce5d00-4867-11ea-9f75-c5b127a9739c.gif)](https://github.com/pozemka/cheatsh-qtcreator)  
+*(GIF courtesy: Pozemka, @pozemka)*

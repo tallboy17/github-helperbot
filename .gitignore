@@ -2,3 +2,5 @@
 /backend/agent/disk/*
 .env
 .DS_Store
+node_modules
+

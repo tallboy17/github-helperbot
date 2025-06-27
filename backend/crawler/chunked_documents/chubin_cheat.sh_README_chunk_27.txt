@@ -1,0 +1,10 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+You don't need to install anything, to start using *cheat.sh*.  
+There are two cases, when you want to install *cheat.sh* locally:  
+1. You plan to use it off-line, without Internet access;
+2. You want to use your own cheat sheets (additionally, or as a replacement).  
+Installation process in described in details here: [cheat.sh standalone installation](doc/standalone.md)

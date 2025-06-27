@@ -1,0 +1,12 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+To activate tab completion support for `cht.sh`, add the `:zsh` script to the *fpath* in your `~/.zshrc`:  
+```zsh
+curl https://cheat.sh/:zsh > ~/.zsh.d/_cht
+echo 'fpath=(~/.zsh.d/ $fpath)' >> ~/.zshrc
+# Open a new shell to load the plugin
+```  
+----

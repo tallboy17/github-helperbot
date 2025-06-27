@@ -1,0 +1,37 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+You can use *cheat.sh* directly from the editor
+(*Emacs*, *Sublime*, *Vim*, and *Visual Studio Code* are currently supported;
+not all features are supported by all plugins though; see below).
+Instead of opening your browser, googling, browsing Stack Overflow
+and eventually copying the code snippets you need into the clipboard
+and later pasting them into the editor,
+you can achieve the same instantly and without leaving the editor at all!  
+Here is what it looks like in Vim:  
+1. If you have a question while editing a program, you can just type
+your question directly in the buffer and press `<leader>KK`. You will get
+the answer to your question in pager. (with `<leader>KB` you'll get the answer
+in a separate buffer).  
+2. If you like the answer, you can manually paste it from the buffer or
+the pager, or if you are lazy you can use `<leader>KP` to paste it below/under
+your question (or replace you question using `<leader>KR`). If you want the
+answer without the comments, `<leader>KC` replays the last query
+toggling them.  
+If you use some static analysis plugin such as *syntastic* (for Vim), you can use
+its warning and error messages as cheat.sh queries: place the cursor on the problem line
+and press `<leader>KE`: explanation for the warning will be opened in a new buffer.  
+Features supported by cheat.sh plugins for different editors:  
+|Feature            |Emacs|Sublime|Vim|VSCode|IDEA|QtCreator|
+|-------------------|-----|-------|---|------|----|---------|
+|Command queries    |✓    |✓      |✓  |✓     |✓   |✓        |
+|Queries from buffer|     |       |✓  |✓     |    |✓        |
+|Toggle comments    |     |       |✓  |✓     |✓   |✓        |
+|Prev/next answer   |     |       |✓  |✓     |✓   |✓        |
+|Multiple answers   |     |✓      |   |      |✓   |         |
+|Warnings as queries|     |       |✓  |      |    |         |
+|Queries history    |     |       |✓  |✓     |    |         |
+|Session id         |     |       |✓  |      |    |         |
+|Configurable server|✓    |       |✓  |✓     |    |✓        |

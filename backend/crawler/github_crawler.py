@@ -56,6 +56,9 @@ def download_file_from_url(url, output_path):
     #except Exception as e:
         #print(f"Failed to download {url}: {e}")
 
+# Store metadata for each repository
+metadata_list = []
+
 # Clone and convert repositories
 for repo in top_repositories:
     repo_name = repo.full_name.replace("/", "_")
@@ -66,8 +69,28 @@ for repo in top_repositories:
                 d_url = file_content.download_url
                 output_path = os.path.join("./github_documents", f"{repo_name}_README.md")
                 download_file_from_url(d_url, output_path)
+                
+                # Add metadata for this repository
+                metadata = {
+                    "readme_file": f"{repo_name}_README.md",
+                    "repo_name": repo.full_name,
+                    "language": repo.language or "Unknown",
+                    "stars": repo.stargazers_count,
+                    "forks": repo.forks_count,
+                    "description": repo.description or "",
+                    "url": repo.html_url,
+                    "created_at": repo.created_at.isoformat() if repo.created_at else "",
+                    "updated_at": repo.updated_at.isoformat() if repo.updated_at else ""
+                }
+                metadata_list.append(metadata)
     except Exception as e:
         print(f"Error processing {repo_name}: {e}")
 
+# Save metadata to JSON file
+metadata_path = os.path.join(output_folder, "metadata.json")
+with open(metadata_path, 'w', encoding='utf-8') as f:
+    json.dump(metadata_list, f, indent=2, ensure_ascii=False)
+
 print("GitHub crawling complete! Files saved in", output_folder)
+print(f"Metadata saved to {metadata_path}")
 

@@ -1,0 +1,11 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+To activate tab completion support for `cht.sh`, add the `:bash_completion` script to your `~/.bashrc`:  
+```bash
+curl https://cheat.sh/:bash_completion > ~/.bash.d/cht.sh
+. ~/.bash.d/cht.sh
+# and add . ~/.bash.d/cht.sh to ~/.bashrc
+```

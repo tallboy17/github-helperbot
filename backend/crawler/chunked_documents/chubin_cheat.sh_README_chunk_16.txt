@@ -1,0 +1,13 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+* [vscode-snippet](https://github.com/mre/vscode-snippet)
+* Install it from [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=vscode-snippet.Snippet)  
+Usage:  
+1. Hit <kbd>⌘ Command</kbd> + <kbd>⇧ Shift</kbd> + <kbd>p</kbd>
+2. Run `Snippet: Find`.
+3. Type your query and hit enter.  
+[![vscode-snippet](https://cheat.sh/files/vscode-snippet-demo.gif)](https://github.com/mre/vscode-snippet)  
+*(GIF courtesy: Matthias Endler, @mre)*

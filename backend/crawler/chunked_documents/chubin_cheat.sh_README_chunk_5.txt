@@ -1,0 +1,12 @@
+Repository: chubin/cheat.sh
+Language: Python
+Stars: 39516
+Forks: 1821
+-----
+The cheat.sh service has its own command line client (`cht.sh`) that
+has several useful features compared to querying the service directly with `curl`:  
+* Special shell mode with a persistent queries context and readline support.
+* Queries history.
+* Clipboard integration.
+* Tab completion support for shells (bash, fish, zsh).
+* Stealth mode.
